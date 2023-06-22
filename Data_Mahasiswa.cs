@@ -105,6 +105,13 @@ namespace Disconnected_Environmet
             cbxProdi.DataSource = ds.Tables[0];
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FormDataMaster dm = new FormDataMaster();
+            dm.Show();
+            this.Hide();
+        }
+
         private void btnClear_Click(object sender, EventArgs e)
         {
             refreshform();

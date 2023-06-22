@@ -45,6 +45,7 @@
             this.data_MahasiswaDataSet1 = new Disconnected_Environmet.Data_MahasiswaDataSet1();
             this.mahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mahasiswaTableAdapter = new Disconnected_Environmet.Data_MahasiswaDataSet1TableAdapters.MahasiswaTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_MahasiswaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
@@ -189,11 +190,22 @@
             // 
             this.mahasiswaTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(658, 390);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormDataStatusMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnAdd);
@@ -236,5 +248,6 @@
         private Data_MahasiswaDataSet1 data_MahasiswaDataSet1;
         private System.Windows.Forms.BindingSource mahasiswaBindingSource;
         private Data_MahasiswaDataSet1TableAdapters.MahasiswaTableAdapter mahasiswaTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }

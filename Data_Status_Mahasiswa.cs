@@ -213,6 +213,12 @@ namespace Disconnected_Environmet
             refreshform();
             dataGridView();
         }
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormDataMaster dm = new FormDataMaster();
+            dm.Show();
+            this.Hide();
+        }
     }
 }

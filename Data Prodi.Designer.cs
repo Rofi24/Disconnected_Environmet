@@ -41,6 +41,7 @@
             this.prodiTableAdapter = new Disconnected_Environmet.Data_MahasiswaDataSetTableAdapters.ProdiTableAdapter();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_MahasiswaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodiBindingSource)).BeginInit();
@@ -146,11 +147,22 @@
             this.textBox1.TabIndex = 8;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 384);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 9;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // FormDataProdi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnClear);
@@ -185,5 +197,6 @@
         private Data_MahasiswaDataSetTableAdapters.ProdiTableAdapter prodiTableAdapter;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnBack;
     }
 }

@@ -60,6 +60,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.mahasiswaTableAdapter = new Disconnected_Environmet.Data_MahasiswaDataSet1TableAdapters.MahasiswaTableAdapter();
+            this.btnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.data_MahasiswaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -334,11 +335,22 @@
             // 
             this.mahasiswaTableAdapter.ClearBeforeFill = true;
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(384, 389);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.TabIndex = 16;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // FormDataMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtAlamat);
@@ -400,5 +412,6 @@
         private Data_MahasiswaDataSet1 data_MahasiswaDataSet1;
         private System.Windows.Forms.BindingSource mahasiswaBindingSource;
         private Data_MahasiswaDataSet1TableAdapters.MahasiswaTableAdapter mahasiswaTableAdapter;
+        private System.Windows.Forms.Button btnBack;
     }
 }

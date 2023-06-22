@@ -122,5 +122,12 @@ namespace Disconnected_Environmet
                 refreshForm();
             }
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            FormDataMaster dm = new FormDataMaster();
+            dm.Show();
+            this.Hide();
+        }
     }
 }
